@@ -10,6 +10,7 @@ Django’s signal system is built using the blinker or dispatch system which fol
 
 ----------------------------------------------------------------------
 **File - models.py**
+
 from django.db import models
 from django.db.models.signals import post_save
 from django.dispatch import receiver
@@ -27,6 +28,7 @@ def on_book_saved(sender, instance, created, **kwargs):
 -----------------------------------------------------------------------
 
 **view.py**
+
 from django.http import HttpResponse
 from .models import Book
 import time
